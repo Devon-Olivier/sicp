@@ -1,0 +1,34 @@
+%% LyX 2.0.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[12pt,oneside,english]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+Abelson and Sussman \emph{Structure and Interpretation of Computer
+Programs 2nd Edition. }Exercise 2.5.
+
+
+\section*{Solution}
+
+We show that $f:\mathbb{Z}\times\mathbb{Z}\rightarrow\mathbb{Z}$
+defined by $f\left(a,b\right)=2^{a}3^{b}$, is 1-1.
+
+Suppose that $f\left(a,b\right)=f\left(c,d\right)$. Then $2^{a}3^{b}=2^{c}3^{d}$.
+Assume, for the sake of obtaining a contradiction, that $a\neq c$.
+Then without loss of generality we may suppose that $a>c$. This implies
+that $2^{a-c}3^{b}=3^{d}$ is even, since $a-c>0$. This is our contradiction.
+Hence $a=c$. It follows immediately that $b=d$. Hence $f$ is 1-1.
+\end{document}

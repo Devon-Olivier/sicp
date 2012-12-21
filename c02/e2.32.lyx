@@ -1,0 +1,206 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\wp\left(A\right)$
+\end_inset
+
+ be the power set of a non-empty set 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\wp\left(A\right)$
+\end_inset
+
+ can be partitioned into two sets, viz.
+\end_layout
+
+\begin_layout Enumerate
+the set containing subsets that contain a particular element, which we shall
+ call 
+\begin_inset Formula $\left(car\quad A\right)$
+\end_inset
+
+, of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Call this set 
+\begin_inset Formula $C$
+\end_inset
+
+ (maybe for Contain).
+\end_layout
+
+\begin_layout Enumerate
+the set containing subsets that do not contain 
+\begin_inset Formula $\left(car\quad A\right)$
+\end_inset
+
+.
+ Call this set 
+\begin_inset Formula $rest$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Any subset 
+\begin_inset Formula $c\in C$
+\end_inset
+
+ can be written as 
+\begin_inset Formula $\left\{ \left(car\quad A\right)\right\} \cup r$
+\end_inset
+
+ where 
+\begin_inset Formula $r=c-\left\{ \left(car\quad A\right)\right\} \in rest$
+\end_inset
+
+.
+ That is every subset of 
+\begin_inset Formula $A$
+\end_inset
+
+ containing 
+\begin_inset Formula $a$
+\end_inset
+
+ is the union of 
+\begin_inset Formula $\left\{ \left(car\quad A\right)\right\} $
+\end_inset
+
+ and a subset that does not contain 
+\begin_inset Formula $\left(car\quad A\right)$
+\end_inset
+
+.
+ Conversely, every union of 
+\begin_inset Formula $\left\{ \left(car\quad A\right)\right\} $
+\end_inset
+
+ and a subset not containg 
+\begin_inset Formula $\left(car\quad A\right)$
+\end_inset
+
+ gives a subset of 
+\begin_inset Formula $A$
+\end_inset
+
+ containing 
+\begin_inset Formula $\left(car\quad A\right)$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $C$
+\end_inset
+
+ is equal to the set of subsets formed from the union of 
+\begin_inset Formula $\left\{ \left(car\quad A\right)\right\} $
+\end_inset
+
+ and some subset not containing 
+\begin_inset Formula $\left(car\quad A\right)$
+\end_inset
+
+.
+ Thus,  
+\begin_inset Formula 
+\begin{equation}
+C=\bigcup_{r\in rest}\left(car\quad A\right)\cup r\label{eq:C}
+\end{equation}
+
+\end_inset
+
+So given 
+\begin_inset Formula $rest$
+\end_inset
+
+ we may compute 
+\begin_inset Formula $\wp\left(A\right)$
+\end_inset
+
+ by computing 
+\begin_inset Formula $C$
+\end_inset
+
+ as in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:C"
+
+\end_inset
+
+, then computing 
+\begin_inset Formula $\wp\left(A\right)=rest\cup C$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
