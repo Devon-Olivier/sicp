@@ -126,7 +126,7 @@ Any subset
 \end_inset
 
  containing 
-\begin_inset Formula $a$
+\begin_inset Formula $\left(car\quad A\right)$
 \end_inset
 
  is the union of 
@@ -168,7 +168,7 @@ Any subset
 \end_inset
 
 .
- Thus,  
+ Thus, 
 \begin_inset Formula 
 \begin{equation}
 C=\bigcup_{r\in rest}\left(car\quad A\right)\cup r\label{eq:C}
