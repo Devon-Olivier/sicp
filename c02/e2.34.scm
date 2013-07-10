@@ -22,3 +22,16 @@
   (accumulater (lambda (x y) (+ y 1))
                0
                sequence))
+
+;;Implementing this function requires the programmer
+;;to understand the internal behaviour of accumulater
+;;Ent? He must know that accumulater applies 'operation'
+;;to (car list) and the result of applying accumulater
+;;on (cdr list).
+;;Or should I be seeing this as a right associative 
+;;combination with 'operation' as the operation?
+(define (horner-eval x coef-list)
+  (accumulater (lambda (this-coef higher-terms)
+                 (+ this-coef (* x higher-terms)))
+               0
+               coef-list))
