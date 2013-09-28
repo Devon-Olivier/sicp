@@ -5,6 +5,7 @@
 ;;I don't like this definition it is confusing
 ;;I had to take pen to paper to prove that these
 ;;definitions do compute the r such that r =  base^exp (mod m)
+;;EDIT this is based on fermat's little theorem. Not confusing any more
 (define (expmod base exp m)
   (cond ((= exp 0) 1)
 	((even? exp) (remainder (square (expmod base 
