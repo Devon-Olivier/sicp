@@ -5,7 +5,7 @@
         ((predicate (car lst)) (cons (car lst) (filter (cdr lst) predicate)))
         (else (filter (cdr lst) predicate))))
 
-(define (same-parity lst)
+#'(define (same-parity lst)
   (if (null? lst)
       lst
       (filter lst (parity (car lst)))))
@@ -14,3 +14,6 @@
   (if (even? n)
       even?
       odd?))
+
+(define (same-parity n . rest)
+  (cons n (filter (lambda (m) (even? (+ n m))) rest)))
